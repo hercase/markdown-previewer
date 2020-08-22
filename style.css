@@ -6,6 +6,13 @@
   --light-background: #e1e5f2;
   --border-radius: 5px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -83,4 +90,16 @@
 
 .gutter.gutter-horizontal {
   cursor: ew-resize;
+}
+
+/* Markdown Styles */
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.3em;}
+h4 {font-size: 1em;}
+h5 {font-size: 0.8em;}
+h6 {font-size: 0.7em;}
+
+ol, ul {
+  list-style-position: inside;
 }
