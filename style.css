@@ -45,7 +45,7 @@
   background-color: #fff;
   flex: 1;
   padding: 1rem;
-  margin: .5rem;
+  margin: .2rem;
   border-radius: var(--border-radius, 5px);
 }
 
@@ -79,4 +79,8 @@
 .footer a {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.gutter.gutter-horizontal {
+  cursor: ew-resize;
 }
