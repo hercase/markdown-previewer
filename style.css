@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
 
+:root {
+  --color-primary: #d62828;
+  --dark-background: #003049;
+  --light-background: #e1e5f2;
+  --border-radius: 5px;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -9,7 +15,7 @@
 
 .header {
   height: 4rem;
-  background-color: #0d1b2a;
+  background-color: var(--dark-background, black);
   color: #fff;
   display: flex;
   align-items: center;
@@ -28,11 +34,37 @@
   padding: 1rem;
 }
 
+.editor__title {
+  height: 1rem;
+  font-size: .7rem;
+  margin-bottom: .5rem;
+}
 .markdown, .preview {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   flex: 1;
   padding: 1rem;
   margin: .5rem;
+  border-radius: var(--border-radius, 5px);
+}
+
+.markdown__content {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid var(--dark-background, black);
+  border-radius: var(--border-radius, 5px);
+}
+
+.markdown__content:focus {
+  outline-color: var(--color-primary);
+}
+
+.preview__content {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid var(--dark-background, black);
+  border-radius: 5px;
 }
 
 .footer {
@@ -45,6 +77,6 @@
 }
 
 .footer a {
-  color: #fff;
+  color: var(--color-primary);
   text-decoration: none;
 }
