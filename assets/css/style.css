@@ -137,3 +137,13 @@ ul {
 hr {
   margin: 1rem 0;
 }
+
+@media ( max-width: 900px) {
+  .header {
+    justify-content: center;
+  }
+
+  .editor{
+    flex-direction: column;
+  }
+}
